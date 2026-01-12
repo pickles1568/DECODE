@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode.util;
 
 import java.util.TreeMap;
 
-public class DistToRPM {
+public class DistToPower {
 
     //Tree map, the thing that calculates closest vals:
     private static TreeMap<Double, Double> lookupTable = new TreeMap<>();
