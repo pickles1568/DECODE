@@ -3,8 +3,8 @@ package org.firstinspires.ftc.teamcode.teleops;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-import org.firstinspires.ftc.teamcode.util.DistToRPM;
-import org.firstinspires.ftc.teamcode.util.DistToRPM.*;
+import org.firstinspires.ftc.teamcode.util.DistToPower;
+
 @TeleOp
 
 public class testDist extends OpMode {
@@ -20,7 +20,7 @@ public class testDist extends OpMode {
     @Override
     public void loop() {
         dist = gamepad1.left_stick_y * 100;
-        rpm = DistToRPM.CalcRPM(dist);
+        rpm = DistToPower.CalcRPM(dist);
         telemetry.addData("dist", dist);
         telemetry.addData("RPM", rpm);
         telemetry.update();

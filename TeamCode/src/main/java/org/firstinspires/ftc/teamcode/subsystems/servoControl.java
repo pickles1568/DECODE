@@ -11,13 +11,13 @@ public class servoControl {
 
     public void servoPower(double power) {
         robot.mid1.setPower(power);
-        robot.mid2.setPower(power);
+
     }
 
 
 
     public void servoStop() {
         robot.mid1.setPower(0);
-        robot.mid2.setPower(0);
+
     }
 }
